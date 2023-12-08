@@ -1,4 +1,5 @@
 {
+  "extends": "@vue/tsconfig.node.json",
   "compilerOptions": {
     "composite": true,
     "module": "esnext",
@@ -12,5 +13,6 @@
     "vitest.config.ts",
     "playwright-ct.config.ts",
     "playwright.config.ts"
-  ]
+  ],
+  "types": ["node"],
 }
