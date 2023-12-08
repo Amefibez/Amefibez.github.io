@@ -38,8 +38,20 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-  },
-  server: {
-    port: 8080,
-  },
+    extensions: [
+      '.js',
+      '.json',
+      '.jsx',
+      '.mjs',
+      '.ts',
+      '.tsx',
+      '.vue',
+  ],
+},
+server: {
+  port: 8080,
+  open: true,
+  cors: true,
+},
+base: './',
 });
